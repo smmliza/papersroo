@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PapersRoo Review 2026 — Is It Worth It?</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --ink: #1a1612;
+      --paper: #faf7f2;
+      --cream: #f3ede3;
+      --rule: #d9d0c4;
+      --accent: #c0392b;
+      --accent2: #2c6e49;
+      --gold: #b5860d;
+      --muted: #6b6155;
+      --light-muted: #9c9082;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--paper);
+      color: var(--ink);
+      font-family: 'Source Serif 4', Georgia, serif;
+      font-size: 17px;
+      line-height: 1.75;
+    }
+
+    /* ── TOP BAR ── */
+    .topbar {
+      background: var(--ink);
+      color: var(--paper);
+      text-align: center;
+      padding: 9px 24px;
+      font-size: 11px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      font-family: 'Source Serif 4', serif;
+      font-weight: 600;
+    }
+    .topbar a { color: #f4c842; text-decoration: none; }
+    .topbar a:hover { text-decoration: underline; }
+
+    /* ── MASTHEAD ── */
+    .masthead {
+      border-bottom: 3px double var(--rule);
+      padding: 36px 24px 28px;
+      text-align: center;
+    }
+
+    .publication-tag {
+      font-size: 10.5px;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--light-muted);
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .masthead-title {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(2.8rem, 8vw, 5.5rem);
+      font-weight: 900;
+      line-height: 1.0;
+      letter-spacing: -0.02em;
+      margin-bottom: 6px;
+    }
+
+    .masthead-title em {
+      font-style: italic;
+      color: var(--accent);
+    }
+
+    .masthead-subtitle {
+      font-size: 1.05rem;
+      color: var(--muted);
+      font-style: italic;
+      font-weight: 300;
+      margin-bottom: 20px;
+    }
+
+    .meta-row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 18px;
+      flex-wrap: wrap;
+      font-size: 12px;
+      letter-spacing: 0.08em;
+      color: var(--light-muted);
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+
+    .meta-row span::before { content: '·'; margin-right: 18px; }
+    .meta-row span:first-child::before { display: none; }
+
+    /* ── LAYOUT ── */
+    .page-wrap {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .content-grid {
+      display: grid;
+      grid-template-columns: 1fr 300px;
+      gap: 56px;
+      padding: 52px 0 80px;
+      align-items: start;
+    }
+
+    /* ── MAIN COLUMN ── */
+    .main-col {}
+
+    .lede {
+      font-size: 1.25rem;
+      font-weight: 600;
+      line-height: 1.55;
+      color: var(--ink);
+      border-left: 4px solid var(--accent);
+      padding-left: 20px;
+      margin-bottom: 36px;
+    }
+
+    .body-text {
+      font-size: 1.05rem;
+      color: #2e2920;
+      margin-bottom: 28px;
+      font-weight: 300;
+    }
+
+    .body-text strong { font-weight: 600; color: var(--ink); }
+
+    .section-rule {
+      border: none;
+      border-top: 1px solid var(--rule);
+      margin: 40px 0;
+    }
+
+    h2.section-head {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.7rem;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    h2.section-head::after {
+      content: '';
+      flex: 1;
+      border-top: 1px solid var(--rule);
+    }
+
+    /* ── PULLQUOTE ── */
+    .pullquote {
+      background: var(--cream);
+      border-top: 3px solid var(--ink);
+      border-bottom: 1px solid var(--rule);
+      padding: 28px 32px;
+      margin: 40px 0;
+      text-align: center;
+    }
+
+    .pullquote p {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.4rem;
+      font-style: italic;
+      line-height: 1.45;
+      color: var(--ink);
+    }
+
+    /* ── SCORE TABLE ── */
+    .score-table { width: 100%; border-collapse: collapse; margin-bottom: 32px; }
+
+    .score-table tr { border-bottom: 1px solid var(--rule); }
+    .score-table tr:last-child { border-bottom: none; }
+
+    .score-table td {
+      padding: 13px 0;
+      font-size: 0.95rem;
+    }
+
+    .score-table td:first-child {
+      font-weight: 600;
+      color: var(--ink);
+      width: 45%;
+    }
+
+    .score-table td:last-child { text-align: right; }
+
+    .score-bar-wrap {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      justify-content: flex-end;
+    }
+
+    .score-bar {
+      width: 100px;
+      height: 6px;
+      background: var(--rule);
+      border-radius: 3px;
+      overflow: hidden;
+    }
+
+    .score-bar-fill {
+      height: 100%;
+      background: var(--accent2);
+      border-radius: 3px;
+      transition: width 1s ease;
+    }
+
+    .score-num {
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      font-size: 0.9rem;
+      color: var(--accent2);
+      min-width: 28px;
+      text-align: right;
+    }
+
+    /* ── PROS/CONS ── */
+    .pros-cons {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin: 28px 0;
+    }
+
+    .pros, .cons {
+      border-radius: 2px;
+      padding: 24px;
+    }
+
+    .pros { background: #eef7f1; border-top: 3px solid var(--accent2); }
+    .cons { background: #fdf0ee; border-top: 3px solid var(--accent); }
+
+    .pros h3, .cons h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 14px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      font-style: normal;
+    }
+
+    .pros h3 { color: var(--accent2); }
+    .cons h3 { color: var(--accent); }
+
+    .pros ul, .cons ul { list-style: none; }
+
+    .pros li, .cons li {
+      font-size: 0.93rem;
+      padding: 5px 0;
+      padding-left: 18px;
+      position: relative;
+      color: #2e2920;
+      font-weight: 300;
+    }
+
+    .pros li::before { content: '✓'; position: absolute; left: 0; color: var(--accent2); font-weight: 700; }
+    .cons li::before { content: '–'; position: absolute; left: 0; color: var(--accent); font-weight: 700; }
+
+    /* ── WHO IS IT FOR ── */
+    .audience-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 24px 0; }
+
+    .audience-card {
+      background: var(--cream);
+      border: 1px solid var(--rule);
+      padding: 18px 20px;
+      border-radius: 2px;
+    }
+
+    .audience-card .aud-icon { font-size: 1.4rem; margin-bottom: 8px; }
+    .audience-card h4 { font-family: 'Playfair Display', serif; font-size: 0.95rem; font-weight: 700; margin-bottom: 4px; }
+    .audience-card p { font-size: 0.88rem; color: var(--muted); font-weight: 300; }
+
+    /* ── SERVICE LIST ── */
+    .service-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 20px 0;
+    }
+
+    .stag {
+      font-size: 0.82rem;
+      padding: 5px 12px;
+      border: 1px solid var(--rule);
+      border-radius: 2px;
+      color: var(--muted);
+      background: var(--cream);
+      font-weight: 600;
+      letter-spacing: 0.03em;
+    }
+
+    /* ── VERDICT ── */
+    .verdict-box {
+      background: var(--ink);
+      color: var(--paper);
+      padding: 40px 36px;
+      margin: 40px 0;
+    }
+
+    .verdict-label {
+      font-size: 10px;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: #f4c842;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    .verdict-box p {
+      font-size: 1.05rem;
+      font-weight: 300;
+      line-height: 1.75;
+      color: #d9d4cc;
+      margin-bottom: 28px;
+    }
+
+    .verdict-score {
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+      margin-bottom: 28px;
+    }
+
+    .verdict-score .big-num {
+      font-family: 'Playfair Display', serif;
+      font-size: 4rem;
+      font-weight: 900;
+      color: #f4c842;
+      line-height: 1;
+    }
+
+    .verdict-score .out-of {
+      font-size: 1.1rem;
+      color: #9c9082;
+    }
+
+    .verdict-score .label {
+      font-size: 0.85rem;
+      color: #9c9082;
+      margin-left: 4px;
+      font-style: italic;
+    }
+
+    .btn-verdict {
+      display: inline-block;
+      background: #f4c842;
+      color: var(--ink);
+      font-family: 'Source Serif 4', serif;
+      font-weight: 700;
+      font-size: 0.95rem;
+      letter-spacing: 0.05em;
+      text-decoration: none;
+      padding: 14px 32px;
+      transition: background 0.2s, transform 0.2s;
+    }
+    .btn-verdict:hover { background: #fff; transform: translateY(-1px); }
+
+    /* ── SIDEBAR ── */
+    .sidebar { position: sticky; top: 24px; }
+
+    .sidebar-card {
+      background: var(--cream);
+      border: 1px solid var(--rule);
+      border-top: 3px solid var(--ink);
+      padding: 28px 24px;
+      margin-bottom: 24px;
+    }
+
+    .sidebar-card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 16px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--rule);
+      letter-spacing: 0.03em;
+    }
+
+    .quick-facts { list-style: none; }
+    .quick-facts li {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      padding: 8px 0;
+      border-bottom: 1px dotted var(--rule);
+      font-size: 0.88rem;
+    }
+    .quick-facts li:last-child { border-bottom: none; }
+    .quick-facts .fact-label { color: var(--muted); font-weight: 300; }
+    .quick-facts .fact-val { font-weight: 600; color: var(--ink); text-align: right; max-width: 55%; }
+
+    .overall-score-box {
+      text-align: center;
+      padding: 20px 0 12px;
+    }
+
+    .overall-score-box .big-score {
+      font-family: 'Playfair Display', serif;
+      font-size: 3.8rem;
+      font-weight: 900;
+      color: var(--accent);
+      line-height: 1;
+    }
+
+    .overall-score-box .score-label {
+      font-size: 11px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--light-muted);
+      font-weight: 600;
+      margin-top: 4px;
+    }
+
+    .sidebar-cta {
+      background: var(--ink);
+      padding: 28px 24px;
+      text-align: center;
+    }
+
+    .sidebar-cta p {
+      color: #d9d4cc;
+      font-size: 0.9rem;
+      font-weight: 300;
+      margin-bottom: 18px;
+      font-style: italic;
+    }
+
+    .btn-sidebar {
+      display: block;
+      background: #f4c842;
+      color: var(--ink);
+      font-weight: 700;
+      font-size: 0.9rem;
+      text-decoration: none;
+      padding: 13px 20px;
+      letter-spacing: 0.04em;
+      transition: background 0.2s;
+      margin-bottom: 10px;
+    }
+    .btn-sidebar:hover { background: #fff; }
+
+    .btn-sidebar-ghost {
+      display: block;
+      color: #9c9082;
+      font-size: 0.8rem;
+      text-decoration: none;
+      padding: 8px 20px;
+      letter-spacing: 0.04em;
+      transition: color 0.2s;
+    }
+    .btn-sidebar-ghost:hover { color: #f4c842; }
+
+    .toc { list-style: none; }
+    .toc li { padding: 6px 0; border-bottom: 1px dotted var(--rule); font-size: 0.88rem; }
+    .toc li:last-child { border-bottom: none; }
+    .toc a { color: var(--ink); text-decoration: none; font-weight: 300; }
+    .toc a:hover { color: var(--accent); text-decoration: underline; }
+    .toc .toc-num { color: var(--light-muted); font-size: 0.78rem; margin-right: 6px; font-weight: 600; }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--ink);
+      color: #9c9082;
+      text-align: center;
+      padding: 36px 24px;
+      font-size: 0.82rem;
+      line-height: 1.8;
+    }
+    footer a { color: #f4c842; text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+
+    /* ── ANIMATIONS ── */
+    .reveal {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .reveal.visible { opacity: 1; transform: none; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 800px) {
+      .content-grid { grid-template-columns: 1fr; }
+      .sidebar { position: static; }
+      .pros-cons { grid-template-columns: 1fr; }
+      .audience-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  Sponsored Review &nbsp;·&nbsp; <a href="https://papersroo.com/?rt=0SydxEv7">Get started at PapersRoo.com →</a>
+</div>
+
+<!-- MASTHEAD -->
+<header class="masthead">
+  <div class="publication-tag">Academic Writing Service Review · 2026</div>
+  <h1 class="masthead-title">Papers<em>Roo</em></h1>
+  <p class="masthead-subtitle">An honest look at one of the most student-friendly paper writing services on the market</p>
+  <div class="meta-row">
+    <span>Editorial Review</span>
+    <span>March 2026</span>
+    <span>Human-Written Papers</span>
+    <span>Overall: 8.9 / 10</span>
+  </div>
+</header>
+
+<!-- MAIN -->
+<div class="page-wrap">
+  <div class="content-grid">
+
+    <!-- LEFT: ARTICLE BODY -->
+    <main class="main-col">
+
+      <p class="lede">
+        PapersRoo positions itself as a fast, affordable, and fully human-powered writing service for students under pressure. After a thorough review of its features, process, pricing approach, and real user feedback, here's our complete assessment.
+      </p>
+
+      <!-- OVERVIEW -->
+      <section id="overview">
+        <h2 class="section-head reveal">Overview</h2>
+        <p class="body-text reveal">
+          <strong>PapersRoo</strong> is an academic writing service built around one core promise: a real human writer — not an AI — will craft your paper from scratch, on time, with your exact instructions. The service targets students who are overwhelmed by deadlines, language barriers, or workload, and need dependable help without the stress.
+        </p>
+        <p class="body-text reveal">
+          The platform covers an impressively wide range of assignment types — from standard essays and research papers all the way to dissertations, business plans, and admission essays. Its mascot (Roo, a kangaroo) and friendly tone give it an approachable, student-first feel that distinguishes it from more corporate-looking competitors.
+        </p>
+        <p class="body-text reveal">
+          The service holds a <strong>4.9-star rating on Sitejabber</strong>, with verified reviews consistently praising delivery speed, writer expertise, and customer support responsiveness.
+        </p>
+      </section>
+
+      <div class="pullquote reveal">
+        <p>"Fast, reliable, and exactly what I needed. My paper was flawless — the writers exceeded my expectations."</p>
+      </div>
+
+      <hr class="section-rule"/>
+
+      <!-- SCORES -->
+      <section id="scores">
+        <h2 class="section-head reveal">Category Scores</h2>
+        <table class="score-table reveal">
+          <tr>
+            <td>Writing Quality</td>
+            <td>
+              <div class="score-bar-wrap">
+                <div class="score-bar"><div class="score-bar-fill" style="width:92%"></div></div>
+                <span class="score-num">9.2</span>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>Delivery Speed</td>
+            <td>
+              <div class="score-bar-wrap">
+                <div class="score-bar"><div class="score-bar-fill" style="width:90%"></div></div>
+                <span class="score-num">9.0</span>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>Value for Money</td>
+            <td>
+              <div class="score-bar-wrap">
+                <div class="score-bar"><div class="score-bar-fill" style="width:87%"></div></div>
+                <span class="score-num">8.7</span>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>Originality (No AI / No Plagiarism)</td>
+            <td>
+              <div class="score-bar-wrap">
+                <div class="score-bar"><div class="score-bar-fill" style="width:95%"></div></div>
+                <span class="score-num">9.5</span>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>Customer Support</td>
+            <td>
+              <div class="score-bar-wrap">
+                <div class="score-bar"><div class="score-bar-fill" style="width:88%"></div></div>
+                <span class="score-num">8.8</span>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>Privacy & Confidentiality</td>
+            <td>
+              <div class="score-bar-wrap">
+                <div class="score-bar"><div class="score-bar-fill" style="width:95%"></div></div>
+                <span class="score-num">9.5</span>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>Ease of Use</td>
+            <td>
+              <div class="score-bar-wrap">
+                <div class="score-bar"><div class="score-bar-fill" style="width:91%"></div></div>
+                <span class="score-num">9.1</span>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </section>
+
+      <hr class="section-rule"/>
+
+      <!-- PROS & CONS -->
+      <section id="pros-cons">
+        <h2 class="section-head reveal">Pros & Cons</h2>
+        <div class="pros-cons reveal">
+          <div class="pros">
+            <h3>✦ Pros</h3>
+            <ul>
+              <li>100% human-written — no AI-generated content</li>
+              <li>Handles urgent, last-minute deadlines</li>
+              <li>Wide range of assignment types covered</li>
+              <li>Fully transparent, student-friendly pricing</li>
+              <li>Direct messaging with assigned writer</li>
+              <li>Free revisions until you're satisfied</li>
+              <li>Strong privacy — no personal data trails</li>
+              <li>Supports international & ESL students</li>
+              <li>4.9★ verified rating on Sitejabber</li>
+            </ul>
+          </div>
+          <div class="cons">
+            <h3>✦ Cons</h3>
+            <ul>
+              <li>Pricing not publicly listed upfront</li>
+              <li>Rush orders may cost more</li>
+              <li>No free sample papers available</li>
+              <li>Writer matching is automated, not manual</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <hr class="section-rule"/>
+
+      <!-- HOW IT WORKS -->
+      <section id="process">
+        <h2 class="section-head reveal">How the Process Works</h2>
+        <p class="body-text reveal">
+          The ordering flow at PapersRoo is deliberately lean — designed to remove friction for students who are already stressed. Here's how it unfolds in practice:
+        </p>
+        <ol style="padding-left: 22px; margin-bottom: 28px;" class="reveal">
+          <li style="padding: 8px 0; border-bottom: 1px dotted var(--rule); font-size: 0.97rem; font-weight: 300; color: #2e2920;">
+            <strong>Place your order</strong> — select assignment type, subject, and deadline.
+          </li>
+          <li style="padding: 8px 0; border-bottom: 1px dotted var(--rule); font-size: 0.97rem; font-weight: 300; color: #2e2920;">
+            <strong>Add instructions</strong> — upload files, rubrics, formatting requirements, or tone notes.
+          </li>
+          <li style="padding: 8px 0; border-bottom: 1px dotted var(--rule); font-size: 0.97rem; font-weight: 300; color: #2e2920;">
+            <strong>Get matched</strong> — Roo pairs you with a subject-relevant writer automatically.
+          </li>
+          <li style="padding: 8px 0; border-bottom: 1px dotted var(--rule); font-size: 0.97rem; font-weight: 300; color: #2e2920;">
+            <strong>Stay in contact</strong> — message your writer at any point during the process.
+          </li>
+          <li style="padding: 8px 0; font-size: 0.97rem; font-weight: 300; color: #2e2920;">
+            <strong>Receive your draft</strong> — download and review your finished paper. Request edits if needed.
+          </li>
+        </ol>
+        <p class="body-text reveal">
+          The revision policy is one of the stronger aspects of the service — students can request edits without awkwardness, and the writers are reportedly responsive to specific feedback.
+        </p>
+      </section>
+
+      <hr class="section-rule"/>
+
+      <!-- WHAT THEY COVER -->
+      <section id="services">
+        <h2 class="section-head reveal">What PapersRoo Covers</h2>
+        <p class="body-text reveal">The service handles virtually every major academic assignment format:</p>
+        <div class="service-list reveal">
+          <span class="stag">Essay</span>
+          <span class="stag">Research Paper</span>
+          <span class="stag">Thesis / Dissertation</span>
+          <span class="stag">Term Paper</span>
+          <span class="stag">Literature Review</span>
+          <span class="stag">Case Study</span>
+          <span class="stag">Book Review</span>
+          <span class="stag">Article Review</span>
+          <span class="stag">Research Proposal</span>
+          <span class="stag">Admission Essay</span>
+          <span class="stag">Proofreading</span>
+          <span class="stag">Reflective Writing</span>
+          <span class="stag">Movie Review</span>
+          <span class="stag">Business Plan</span>
+          <span class="stag">Creative Writing</span>
+          <span class="stag">Report</span>
+          <span class="stag">Critical Thinking</span>
+          <span class="stag">Annotated Bibliography</span>
+          <span class="stag">Presentation / Speech</span>
+        </div>
+      </section>
+
+      <hr class="section-rule"/>
+
+      <!-- WHO IS IT FOR -->
+      <section id="audience">
+        <h2 class="section-head reveal">Who Is PapersRoo For?</h2>
+        <div class="audience-grid reveal">
+          <div class="audience-card">
+            <div class="aud-icon">⏰</div>
+            <h4>Last-Minute Students</h4>
+            <p>Deadline tomorrow? The service is built for urgency and fast turnaround.</p>
+          </div>
+          <div class="audience-card">
+            <div class="aud-icon">🌍</div>
+            <h4>International Students</h4>
+            <p>ESL writers get tone-matched papers that sound natural and native.</p>
+          </div>
+          <div class="audience-card">
+            <div class="aud-icon">📚</div>
+            <h4>Overloaded Undergrads</h4>
+            <p>Juggling work, family, and multiple courses? Roo picks up the slack.</p>
+          </div>
+          <div class="audience-card">
+            <div class="aud-icon">🎓</div>
+            <h4>Graduate Researchers</h4>
+            <p>Dissertations, theses, and research proposals handled at expert level.</p>
+          </div>
+        </div>
+      </section>
+
+      <hr class="section-rule"/>
+
+      <!-- STUDENT REVIEWS -->
+      <section id="reviews">
+        <h2 class="section-head reveal">What Students Are Saying</h2>
+        <p class="body-text reveal">With a <strong>4.9 / 5 on Sitejabber</strong>, PapersRoo's verified reviews paint a consistent picture of reliability and quality:</p>
+
+        <blockquote style="border-left:3px solid var(--rule); padding: 14px 20px; margin: 20px 0; font-style:italic; color: var(--muted); font-size: 0.97rem;" class="reveal">
+          "The support team was super helpful, and the writer nailed my topic perfectly. Highly recommend." <br/>
+          <small style="font-style:normal; font-size:0.82rem; color:var(--light-muted); margin-top:6px; display:block;">— Lily N., verified customer #324480</small>
+        </blockquote>
+
+        <blockquote style="border-left:3px solid var(--rule); padding: 14px 20px; margin: 20px 0; font-style:italic; color: var(--muted); font-size: 0.97rem;" class="reveal">
+          "Absolutely amazing! The essay was well-researched and delivered ahead of time." <br/>
+          <small style="font-style:normal; font-size:0.82rem; color:var(--light-muted); margin-top:6px; display:block;">— Daniel R., verified customer #335469</small>
+        </blockquote>
+
+        <blockquote style="border-left:3px solid var(--rule); padding: 14px 20px; margin: 20px 0; font-style:italic; color: var(--muted); font-size: 0.97rem;" class="reveal">
+          "I finally found a service I can trust. PapersRoo saved my semester!" <br/>
+          <small style="font-style:normal; font-size:0.82rem; color:var(--light-muted); margin-top:6px; display:block;">— Kate M., verified customer #314484</small>
+        </blockquote>
+      </section>
+
+      <hr class="section-rule"/>
+
+      <!-- VERDICT -->
+      <section id="verdict">
+        <h2 class="section-head reveal">Final Verdict</h2>
+        <div class="verdict-box reveal">
+          <div class="verdict-label">Our Verdict</div>
+          <div class="verdict-score">
+            <span class="big-num">8.9</span>
+            <span class="out-of">/ 10</span>
+            <span class="label">— Highly Recommended</span>
+          </div>
+          <p>
+            PapersRoo delivers what it promises: fast, human-written papers with no hidden fees and a genuine commitment to student privacy. Its clear workflow, flexible revision policy, and direct writer communication make it one of the more trustworthy options in this space. It's best suited for students under time pressure, ESL writers, and anyone who simply needs reliable academic help without complications.
+          </p>
+          <a href="https://papersroo.com/?rt=0SydxEv7" class="btn-verdict">Write My Paper at PapersRoo →</a>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- RIGHT: SIDEBAR -->
+    <aside class="sidebar">
+
+      <!-- Overall Score -->
+      <div class="sidebar-card">
+        <h3>Overall Score</h3>
+        <div class="overall-score-box">
+          <div class="big-score">8.9</div>
+          <div class="score-label">Out of 10 · Highly Recommended</div>
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <div class="sidebar-cta">
+        <p>Ready to try it yourself?</p>
+        <a href="https://papersroo.com/?rt=0SydxEv7" class="btn-sidebar">Get My Paper Written</a>
+        <a href="https://papersroo.com/" class="btn-sidebar-ghost" target="_blank">Visit papersroo.com ↗</a>
+      </div>
+
+      <!-- Quick Facts -->
+      <div class="sidebar-card" style="margin-top:24px;">
+        <h3>Quick Facts</h3>
+        <ul class="quick-facts">
+          <li><span class="fact-label">Writers</span><span class="fact-val">Human experts only</span></li>
+          <li><span class="fact-label">Plagiarism</span><span class="fact-val">0% — written from scratch</span></li>
+          <li><span class="fact-label">AI content</span><span class="fact-val">None</span></li>
+          <li><span class="fact-label">Rush orders</span><span class="fact-val">Yes, available</span></li>
+          <li><span class="fact-label">Revisions</span><span class="fact-val">Free, on request</span></li>
+          <li><span class="fact-label">Privacy</span><span class="fact-val">Full — no data trails</span></li>
+          <li><span class="fact-label">Sitejabber rating</span><span class="fact-val">4.9 / 5 ★</span></li>
+          <li><span class="fact-label">Assignment types</span><span class="fact-val">19+ covered</span></li>
+          <li><span class="fact-label">International students</span><span class="fact-val">Fully supported</span></li>
+        </ul>
+      </div>
+
+      <!-- Table of Contents -->
+      <div class="sidebar-card" style="margin-top:24px;">
+        <h3>In This Review</h3>
+        <ul class="toc">
+          <li><a href="#overview"><span class="toc-num">01</span> Overview</a></li>
+          <li><a href="#scores"><span class="toc-num">02</span> Category Scores</a></li>
+          <li><a href="#pros-cons"><span class="toc-num">03</span> Pros & Cons</a></li>
+          <li><a href="#process"><span class="toc-num">04</span> How It Works</a></li>
+          <li><a href="#services"><span class="toc-num">05</span> Services Covered</a></li>
+          <li><a href="#audience"><span class="toc-num">06</span> Who It's For</a></li>
+          <li><a href="#reviews"><span class="toc-num">07</span> Student Reviews</a></li>
+          <li><a href="#verdict"><span class="toc-num">08</span> Final Verdict</a></li>
+        </ul>
+      </div>
+
+    </aside>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <p>This is a sponsored review of <a href="https://papersroo.com/" target="_blank">PapersRoo.com</a>.</p>
+  <p style="margin-top:6px;">Expert notes are intended for research and study purposes only. We do not endorse plagiarism. © 2026</p>
+</footer>
+
+<script>
+  // Scroll-reveal
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.07 });
+  document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+
+  // Animate score bars on scroll
+  const barObs = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.querySelectorAll('.score-bar-fill').forEach(bar => {
+          bar.style.width = bar.style.width; // trigger reflow
+        });
+      }
+    });
+  }, { threshold: 0.3 });
+  document.querySelectorAll('.score-table').forEach(el => barObs.observe(el));
+</script>
+
+</body>
+</html>
